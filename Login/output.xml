@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150628 13:56:17.095" generator="Robot 2.8.7 (Python 2.7.6 on darwin)">
+<suite source="/Users/kritsadanshon/Robot/login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Open Google Chrome Browser">
+<kw type="setup" name="Open Chrome Browser">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.google.co.th</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20150628 13:56:17.206" level="INFO">Opening browser 'gc' to base url 'https://www.google.co.th'</msg>
+<status status="PASS" endtime="20150628 13:56:19.947" starttime="20150628 13:56:17.206"></status>
+</kw>
+<status status="PASS" endtime="20150628 13:56:19.948" starttime="20150628 13:56:17.205"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>lst-ib</arg>
+<arg>Beartai</arg>
+</arguments>
+<msg timestamp="20150628 13:56:19.950" level="INFO">Typing text 'Beartai' into text field 'lst-ib'</msg>
+<status status="PASS" endtime="20150628 13:56:20.582" starttime="20150628 13:56:19.949"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>แบไต๋ไฮเทค: Home</arg>
+</arguments>
+<status status="PASS" endtime="20150628 13:56:21.132" starttime="20150628 13:56:20.583"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150628 13:56:21.201" starttime="20150628 13:56:21.133"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150628 13:56:21.201" critical="yes" starttime="20150628 13:56:17.204"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150628 13:56:21.202" starttime="20150628 13:56:17.095"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
